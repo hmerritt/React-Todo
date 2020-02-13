@@ -1,4 +1,4 @@
 
-.task[iscompleted=true] h1 {
+.task[iscompleted=true] span {
     text-decoration: line-through;
 }
