@@ -1,12 +1,12 @@
 import React from "react";
 import Todo from './Todo';
 
-function TodoList({ tasks }) {
+function TodoList({ tasks, toggleCompleted }) {
     return (
         <div className='tasks'>
             {
-                tasks.map((task, key) => {
-                    return <Todo key={key} task={task} />
+                tasks.slice().reverse().map((task, key) => {
+                    return <Todo key={key} task={task} toggleCompleted={toggleCompleted} />
                 })
             }
         </div>
