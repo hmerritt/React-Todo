@@ -1,0 +1,4 @@
+
+.task[iscompleted=true] span {
+    text-decoration: line-through;
+}
